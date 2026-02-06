@@ -13,10 +13,10 @@ Green Mart is a modern grocery shopping mobile application built to provide user
 
 ## 📱 Screenshots
 <p align="center">
-  <img src="screenshots/splash.png" width="200"/>
-  <img src="screenshots/welcome.png" width="200"/>
-  <img src="screenshots/login.png" width="200"/>
-  <img src="screenshots/signup.png" width="200"/>
+  <img src="ScreenShots/splash.png" width="200"/>
+  <img src="ScreenShots/welcome.png" width="200"/>
+  <img src="ScreenShots/login.png" width="200"/>
+  <img src="ScreenShots/signup.png" width="200"/>
 </p>
 
 > 📌 Make sure to place your screenshots inside a folder named screenshots in the project root.
