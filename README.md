@@ -19,7 +19,6 @@ Green Mart is a modern grocery shopping mobile application built to provide user
   <img src="ScreenShots/signup.png" width="200"/>
 </p>
 
-> 📌 Make sure to place your screenshots inside a folder named screenshots in the project root.
 
 ## 🚀 Technologies Used
 - Flutter
