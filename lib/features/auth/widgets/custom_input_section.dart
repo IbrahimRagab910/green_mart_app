@@ -7,9 +7,11 @@ class CustomInputSection extends StatelessWidget {
     super.key,
     required this.fieldTitle,
     required this.hint,
+    this.validator,
   });
   final String fieldTitle;
   final String hint;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -21,7 +23,7 @@ class CustomInputSection extends StatelessWidget {
           style: TextStyles.small14.copyWith(fontWeight: FontWeight.w600),
         ),
         SizedBox(height: 8),
-        CustomTextField(hint: hint),
+        CustomTextField(hint: hint, validator: validator),
       ],
     );
   }

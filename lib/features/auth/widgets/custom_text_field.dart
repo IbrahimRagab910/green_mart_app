@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:green_mart_app/core/styles/app_colors.dart';
-import 'package:green_mart_app/core/styles/text_styles.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
@@ -8,35 +6,29 @@ class CustomTextField extends StatelessWidget {
     required this.hint,
     this.prefixIcon,
     this.suffixIcon,
+    this.validator,
+    this.enabled = true, this.onTap, this.keyboardType,
   });
+  final String? Function(String?)? validator;
   final String hint;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
+  final bool? enabled;
+  final Function()? onTap;
+  final TextInputType? keyboardType;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      enabled: enabled,
+      validator: validator,
+      onTap: onTap,
+      keyboardType: keyboardType,
+
       decoration: InputDecoration(
         hintText: hint,
-        hintStyle: TextStyles.small14,
-        fillColor: AppColors.greyColor,
-        filled: true,
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(18),
-          borderSide: BorderSide.none,
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(18),
-          borderSide: BorderSide.none,
-        ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(18),
-          borderSide: BorderSide(color: AppColors.errorColor),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(18),
-          borderSide: BorderSide(color: AppColors.errorColor),
-        ),
+        prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
       ),
     );
   }

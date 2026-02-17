@@ -10,4 +10,7 @@ class AppAssets {
   static final String successSvg = 'assets/images/success.svg';
   static final String banana = 'assets/images/banana.png';
   static final String welcom = 'assets/images/welcom.png';
+  static final String diet = 'assets/images/Diet Coke.png';
+  static final String sprite = 'assets/images/Sprite Can.png';
+  static final String apple = 'assets/images/Apple & Grape.png';
 }

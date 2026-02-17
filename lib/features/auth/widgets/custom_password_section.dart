@@ -3,7 +3,8 @@ import 'package:green_mart_app/core/styles/text_styles.dart';
 import 'package:green_mart_app/features/auth/widgets/custom_password_field.dart';
 
 class CustomPasswordSection extends StatefulWidget {
-  const CustomPasswordSection({super.key});
+  const CustomPasswordSection({super.key, this.validator});
+  final String? Function(String?)? validator;
 
   @override
   State<CustomPasswordSection> createState() => _CustomPasswordSectionState();
@@ -20,7 +21,7 @@ class _CustomPasswordSectionState extends State<CustomPasswordSection> {
           style: TextStyles.small14.copyWith(fontWeight: FontWeight.w600),
         ),
         SizedBox(height: 10),
-        CustomPasswordField(),
+        CustomPasswordField(validator: widget.validator,),
       ],
     );
   }

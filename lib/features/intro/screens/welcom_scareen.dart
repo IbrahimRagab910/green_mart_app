@@ -6,6 +6,9 @@ import 'package:green_mart_app/core/styles/text_styles.dart';
 import 'package:green_mart_app/core/widgets/custom_button.dart';
 import 'package:green_mart_app/core/widgets/custom_svg_picture.dart';
 import 'package:green_mart_app/features/auth/Screens/login_screen.dart';
+import 'package:green_mart_app/features/auth/Screens/sign_up_screen.dart';
+import 'package:green_mart_app/features/home/pages/home_screen.dart';
+import 'package:green_mart_app/features/main/main_screen.dart';
 
 class WelcomScareen extends StatelessWidget {
   const WelcomScareen({super.key});
@@ -40,13 +43,13 @@ class WelcomScareen extends StatelessWidget {
                 ),
                 Text(
                   'Ger your groceries in as fast as one hour',
-                  style: TextStyles.TagLineStyle,
+                  style: TextStyles.tagLineStyle,
                 ),
                 SizedBox(height: 39),
                 CustomButton(
                   text: 'Get Started',
                   onPressed: () {
-                    pushReplacement(context, LoginScreen());
+                    pushReplacement(context, MainScreen());
                   },
                 ),
               ],
