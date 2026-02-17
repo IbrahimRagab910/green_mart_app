@@ -1,6 +1,5 @@
 # green_mart_app
 
-
 Green Mart is a modern grocery shopping mobile application built to provide users with a smooth and fast shopping experience.
 
 ## ✨ Features
@@ -8,6 +7,11 @@ Green Mart is a modern grocery shopping mobile application built to provide user
 - Welcome Screen
 - Login Screen
 - Sign Up Screen
+- Mobile Number Screen
+- Verification Screen (OTP)
+- Main Home Screen
+- Search Screen
+- Bottom Navigation Bar
 - Clean and user-friendly UI
 - Designed for a fast grocery shopping experience
 
@@ -17,8 +21,11 @@ Green Mart is a modern grocery shopping mobile application built to provide user
   <img src="ScreenShots/welcome.png" width="200"/>
   <img src="ScreenShots/login.png" width="200"/>
   <img src="ScreenShots/signup.png" width="200"/>
+  <img src="ScreenShots/mobile_number.png" width="200"/>
+  <img src="ScreenShots/verification.png" width="200"/>
+  <img src="ScreenShots/main_screen.png" width="200"/>
+  <img src="ScreenShots/search_screen.png" width="200"/>
 </p>
-
 
 ## 🚀 Technologies Used
 - Flutter
@@ -30,10 +37,9 @@ Green Mart is a modern grocery shopping mobile application built to provide user
 ## 📌 Project Status
 The project is currently under development.  
 More features will be added soon such as:
-- Home Screen
-- Product Listing
 - Cart
 - Checkout
+- Payment Integration
 
 ## 👤 Author
 - Ibrahim Ragab
