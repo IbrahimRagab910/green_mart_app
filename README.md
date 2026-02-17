@@ -32,7 +32,7 @@ Green Mart is a modern grocery shopping mobile application built to provide user
 - Dart
 
 ## 🔗 Repository Link
-👉 [Green Mart GitHub Repository](https://github.com/USERNAME/REPO_NAME)
+👉 [Green Mart GitHub Repository](https://github.com/IbrahimRagab910/REPO_NAME)
 
 ## 📌 Project Status
 The project is currently under development.  
