@@ -3,11 +3,10 @@ import 'package:green_mart_app/core/constants/app_assets.dart';
 import 'package:green_mart_app/core/styles/app_colors.dart';
 import 'package:green_mart_app/core/styles/text_styles.dart';
 import 'package:green_mart_app/features/auth/widgets/custom_text_field.dart';
+import 'package:green_mart_app/features/home/Date/best_selling_model.dart';
 import 'package:green_mart_app/features/home/widgets/item_widget.dart';
 
 class BestSellingWidget extends StatelessWidget {
-  const BestSellingWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -46,17 +45,12 @@ class BestSellingWidget extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return ItemWidget(
-                    name: 'Banana',
-                    weight: 7,
-                    price: 15.6,
-                    imagePath: AppAssets.banana,
-                  );
+                  return ItemWidget(model: productList[index]);
                 },
                 separatorBuilder: (context, index) {
                   return SizedBox(width: 9);
                 },
-                itemCount: 10,
+                itemCount: productList.length,
               ),
             ),
           ],

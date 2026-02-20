@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:green_mart_app/core/constants/app_assets.dart';
+import 'package:green_mart_app/core/favorite/page/favorite_screen.dart';
 import 'package:green_mart_app/core/styles/app_colors.dart';
 import 'package:green_mart_app/core/widgets/custom_svg_picture.dart';
+import 'package:green_mart_app/features/account/pages/account_screen.dart';
+import 'package:green_mart_app/features/cart/pages/cart_screen.dart';
+
+import 'package:green_mart_app/features/explore/pages/explore_screen.dart';
 import 'package:green_mart_app/features/home/pages/home_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -15,10 +20,10 @@ class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
   List<Widget> screens = [
     HomeScreen(),
-    Center(child: Text('explore Screen')),
-    Center(child: Text('cart Screen')),
-    Center(child: Text('favorite Screen')),
-    Center(child: Text('account Screen')),
+    ExploreScreen(),
+    CartScreen(),
+    FavoriteScreen(),
+    AccountScreen(),
   ];
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:green_mart_app/core/constants/app_assets.dart';
 import 'package:green_mart_app/core/styles/app_colors.dart';
 import 'package:green_mart_app/features/auth/widgets/custom_text_field.dart';
+import 'package:green_mart_app/features/home/Date/best_selling_model.dart';
 import 'package:green_mart_app/features/home/Date/search_model.dart';
 import 'package:green_mart_app/features/home/widgets/item_widget.dart';
 
@@ -29,6 +30,7 @@ class SearchScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(top: 35, left: 15, right: 15),
         child: GridView.builder(
+          itemCount: productList.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             mainAxisSpacing: 10,
@@ -41,12 +43,7 @@ class SearchScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: AppColors.borderColor),
               ),
-              child: ItemWidget(
-                name: searchList[index].name,
-                weight: searchList[index].quantity,
-                price: searchList[index].price,
-                imagePath: searchList[index].image,
-              ),
+              child: ItemWidget(model: productList[index]),
             );
           },
         ),

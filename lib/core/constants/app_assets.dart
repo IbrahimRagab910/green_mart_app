@@ -13,4 +13,22 @@ class AppAssets {
   static final String diet = 'assets/images/Diet Coke.png';
   static final String sprite = 'assets/images/Sprite Can.png';
   static final String apple = 'assets/images/Apple & Grape.png';
+  static final String ginger = 'assets/images/ginger.png';
+  static final String pepper = 'assets/images/pepper.png';
+  static final String bekary = 'assets/images/bekary.png';
+  static final String beverages = 'assets/images/beverages.png';
+  static final String egg = 'assets/images/egg.png';
+  static final String fruits = 'assets/images/fruits.png';
+  static final String meat = 'assets/images/meat.png';
+  static final String oil = 'assets/images/oil.png';
+  static final String appleFruite = 'assets/icons/apple.png';
+  static final String profile = 'assets/images/profile.jpg';
+  static final String ordersSvg = 'assets/icons/orders.svg';
+  static final String detailsSvg = 'assets/icons/details.svg';
+  static final String deliverySvg = 'assets/icons/delivery.svg';
+  static final String paymentMethodSvg = 'assets/icons/paymentMethod.svg';
+  static final String aboutSvg = 'assets/icons/about.svg';
+  static final String helpSvg = 'assets/icons/help.svg';
+  static final String promoSvg = 'assets/icons/promo.svg';
+  static final String notificationsSvg = 'assets/icons/notifications.svg';
 }
